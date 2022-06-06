@@ -1,0 +1,6 @@
+{
+    "appId": "com.glidair.app",
+    "appName": "glidair",
+    "webDir": "dist",
+    "bundledWebRuntime": false
+}

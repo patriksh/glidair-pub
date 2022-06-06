@@ -1,0 +1,83 @@
+// Dizajn za popis rezultata na pregledu natjecanja i na ljestvicama poretka.
+.results {
+    ion-item {
+        --padding-start: 0;
+        --padding-end: 0;
+        --inner-padding-end: 0;
+    }
+
+    ion-label {
+        display: flex;
+        gap: 15px;
+    }
+
+    .place, .place span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .place {
+        --place-color: var(--ion-color-light);
+
+        &.place-1 {
+            --place-color: #C9B037;
+        }
+
+        &.place-2 {
+            --place-color: #B4B4B4;
+        }
+
+        &.place-3 {
+            --place-color: #AD8A56;
+        }
+
+        .outer {
+            width: 48px;
+            height: 48px;
+            border: 2px dotted var(--place-color);
+            border-radius: 50%;
+        }
+
+        .inner {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            background: var(--place-color);
+            border-radius: 50%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .scores {
+        color: #a8a8a8;
+        font-size: 14px;
+        margin-top: 8px;
+
+        span {
+            background: var(--ion-color-light);
+            padding: 4px 8px;
+            margin-right: 4px;
+            border-radius: 8px;
+
+            &.ignore {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .score {
+        font-size: 14px;
+        padding: 4px 8px;
+        border-radius: 8px;
+        color: #a8a8a8;
+        background: var(--ion-color-light);
+        font-weight: bold;
+    }
+}

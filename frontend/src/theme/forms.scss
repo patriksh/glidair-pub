@@ -1,0 +1,21 @@
+ion-item {
+    background: var(--ion-color-light);
+    border-radius: 8px;
+
+    ion-note {
+        color: var(--ion-color-primary);
+        margin-top: -12px;
+        margin-bottom: 8px;
+    }
+
+    &.item-has-focus {
+        ion-note {
+            display: none;
+        }
+    }
+}
+
+hr {
+    background: var(--ion-color-light);
+    margin: 20px 0;
+}

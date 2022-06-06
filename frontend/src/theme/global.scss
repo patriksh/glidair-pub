@@ -1,0 +1,52 @@
+// Pomakni toast obavijesti gore za 60px zbog izbornika.
+body {
+    &:not(.backdrop-no-scroll) {
+        ion-toast {
+            transform: translateY(-60px);
+        }
+    }
+}
+
+// Makni padding na mobilnim uređajima na popisima.
+ion-grid.list {
+    --ion-grid-column-padding: 0;
+
+    ion-grid {
+        --ion-grid-column-padding: initial;
+    }
+
+    ion-card {
+        margin: 8px;
+        cursor: pointer;
+    }
+}
+
+// Makni padding na mobilnim uređajima na detaljima natjecanja/korisnika/kluba.
+ion-grid.page {
+    --ion-grid-padding-xs: 0;
+    --ion-grid-column-padding-xs: 0;
+    --ion-grid-padding-sm: 0;
+    --ion-grid-padding-md: 0;
+
+    ion-grid {
+        --ion-grid-padding-xs: initial;
+        --ion-grid-column-padding-xs: initial;
+        --ion-grid-padding-sm: initial;
+        --ion-grid-padding-md: initial;
+    }
+}
+
+// Default border radius za skeleton loader.
+ion-skeleton-text {
+    border-radius: 8px;
+}
+
+// Animacija kod učitavanja natjecanja/korisnika/klubova.
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-from {
+    transform: translateY(20px);
+    opacity: 0;
+}
